@@ -25,7 +25,7 @@ private val itemQuantites = IntArray(cartItems.size){1}
             binding.apply {
                 cartFoodName.text = cartItems[position]
                 cartItemPrice.text = CartItemPrice[position]
-                cartImage.setImageResource(cartImage)
+                cartImage.setImageResource(cartImage[position])
             }
         }
 
