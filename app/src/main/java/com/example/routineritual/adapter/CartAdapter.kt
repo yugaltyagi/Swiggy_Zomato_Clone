@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.routineritual.databinding.CartItemBinding
 
-class CartAdapter (private val cartItems:MutableList<String>, private val CartItemPrice: MutableList<String>, private var cartImage :MutableList<Int>): RecyclerView.Adapter<CartAdapter.CartviewHolder>() {
+class CartAdapter (private val cartItems:MutableList<String>, private val CartItemPrice: MutableList<String>, private var CartImage :MutableList<Int>): RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
 private val itemQuantites = IntArray(cartItems.size){1}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartViewHolder {
@@ -23,9 +23,11 @@ private val itemQuantites = IntArray(cartItems.size){1}
   inner class CartViewHolder(private  val binding: CartItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(position: Int) {
             binding.apply {
+                val quantity = itemQuantites[position]
                 cartFoodName.text = cartItems[position]
                 cartItemPrice.text = CartItemPrice[position]
-                cartImage.setImageResource(cartImage[position])
+                cartImage.setImageResource(CartImage[position])
+                cartitemquantity.text=quantity.toString()
             }
         }
 

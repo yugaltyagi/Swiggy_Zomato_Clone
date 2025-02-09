@@ -24,9 +24,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/cartimage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/cartImage"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +41,7 @@
                 android:layout_marginStart="4dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toTopOf="@+id/cartItemPrice"
-                app:layout_constraintStart_toEndOf="@+id/cartimage"
+                app:layout_constraintStart_toEndOf="@+id/cartImage"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -50,7 +51,7 @@
                 android:layout_marginStart="4dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cartimage"
+                app:layout_constraintStart_toEndOf="@+id/cartImage"
                 app:layout_constraintTop_toBottomOf="@+id/cartFoodName" />
 
             <ImageView
@@ -60,12 +61,12 @@
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/icon_minus"
-                app:layout_constraintBottom_toBottomOf="@+id/quantity"
-                app:layout_constraintEnd_toStartOf="@+id/quantity"
-                app:layout_constraintTop_toTopOf="@+id/quantity" />
+                app:layout_constraintBottom_toBottomOf="@+id/cartitemquantity"
+                app:layout_constraintEnd_toStartOf="@+id/cartitemquantity"
+                app:layout_constraintTop_toTopOf="@+id/cartitemquantity" />
 
             <TextView
-                android:id="@+id/quantity"
+                android:id="@+id/cartitemquantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
