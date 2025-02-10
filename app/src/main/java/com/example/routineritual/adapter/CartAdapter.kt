@@ -28,6 +28,16 @@ private val itemQuantites = IntArray(cartItems.size){1}
                 cartItemPrice.text = CartItemPrice[position]
                 cartImage.setImageResource(CartImage[position])
                 cartitemquantity.text=quantity.toString()
+
+                minusButton.setOnClickListener{
+
+                }
+                plusButton.setOnClickListener{
+
+                }
+                deleteButton.setOnClickListener{
+                    
+                }
             }
         }
 
