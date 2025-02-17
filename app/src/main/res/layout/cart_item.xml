@@ -68,12 +68,12 @@
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/icon_minus"
-                app:layout_constraintBottom_toBottomOf="@+id/cartitemquantity"
-                app:layout_constraintEnd_toStartOf="@+id/cartitemquantity"
-                app:layout_constraintTop_toTopOf="@+id/cartitemquantity" />
+                app:layout_constraintBottom_toBottomOf="@+id/cartItemQuantity"
+                app:layout_constraintEnd_toStartOf="@+id/cartItemQuantity"
+                app:layout_constraintTop_toTopOf="@+id/cartItemQuantity" />
 
             <TextView
-                android:id="@+id/cartitemquantity"
+                android:id="@+id/cartItemQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
